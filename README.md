@@ -1,5 +1,5 @@
 # ConsoleJavaQuiz
-### This is a semi-intermediate quiz that is meant to be taken within an IDE terminal.
+### This is a semi-intermediate script that creates a quiz which is taken within an IDE terminal.
 
 #### This project is broken down into 5 distinct programs which can be found below. Each quiz has a total of 10 questions and you need a minimum of 6 correct to pass.
 
