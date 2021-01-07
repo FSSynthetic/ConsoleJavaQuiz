@@ -1,22 +1,29 @@
 # ConsoleJavaQuiz
 ### This is a semi-intermediate quiz that is meant to be taken within an IDE terminal.
 
-#### The quiz is broken down into 5 distinct sections. Each quiz has 10 questions total with a minimum of 6 correct to pass.
+#### This project is broken down into 5 distinct programs which can be found below. Each quiz has a total of 10 questions and you need a minimum of 6 correct to pass.
 
-##### StartMenu
+#### __StartMenu__
 
 Just the starting menu of the quiz (main class).
-This is where the user will choose their quiz of choice.
+This is where the user will choose their quiz of choice and maneuver around.
 
-### Quizzes Folder
+## __Quizzes Folder__
+Just the folder where the 4 quizzes are located.
 
-##### DiscQuiz
+#### __DiscQuiz__
 
 This is the Discord Based Quiz. This will quiz the user on many different levels of Discord knowledge.
 
 
-##### JavaQuiz
+#### __JavaQuiz__
 
-##### RandQuiz
+This is the Java Based Quiz. This will quiz the user on different levels of Java Programming.
 
-##### TechQuiz
+#### __RandQuiz__
+
+This is the Random quiz. This quiz is just a collective of random questions because I was too lazy to think of another category to add.
+
+#### __TechQuiz__
+
+And finally, the Technology Based Quiz. This will...you guessed it, quiz you on different subjects of technology.
