@@ -11,7 +11,7 @@ public class TechQuiz {
         System.out.println("You are about to start the Technology Based Quiz.");
         System.out.println();
         System.out.println("It may also be worth noting that while you're taking the quiz,");
-        System.out.println("if you type a response other than the correct answer, you'll be marked incorrect.");
+        System.out.println("if you type any response other than the correct answer, it'll be marked incorrect.");
         System.out.println();
         System.out.println("Are you sure you want to continue?");
         System.out.println();
@@ -162,12 +162,7 @@ public class TechQuiz {
 		System.out.println("The correct answer was" Character.toLowerCase(Answers[i])));
             }
         }
-
-
-        // End of Quiz Questions.
-
-        ClearConsole();
-
+	    
         System.out.println("You have finished the TechQuiz!");
 
         try {
@@ -176,17 +171,12 @@ public class TechQuiz {
             Thread.currentThread().interrupt();
                
         }
-
-        ClearConsole();
-
         
         if (Correct >= 6) { // If the user has 6 or more answers correct, this statement will execute.
-            ClearConsole();
             System.out.println("You got " + Correct + "/10 correct with a minimum of 6/10 to pass. You passed!");
 
         }
         else { // If the user has less than 6 correct answers, this statement will execute.
-            ClearConsole();
             System.out.println("You got " + Correct + "/10 correct with a minimum of 6/10 to pass. Unfortunately, You failed.");
         }
 
@@ -196,8 +186,6 @@ public class TechQuiz {
             Thread.currentThread().interrupt();
                
         }
-
-        ClearConsole();
 
         System.out.println("Welp, back to the main menu you go!");
 
