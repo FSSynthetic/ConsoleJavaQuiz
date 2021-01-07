@@ -57,6 +57,7 @@ public class TechQuiz {
             Thread.currentThread().interrupt();
                
         }
+	    // Here begins the strings of questions. Each question in assigned to a variable. The questions variables are later placed into an array.
 
         String Q1 = \n"------------------------------------------------------\n"
             +   "Question 1:\n"
@@ -137,11 +138,17 @@ public class TechQuiz {
             +   " \n"
             +   "1980: A\n1868: B\n1902: C\n1876: D\n"
             +   "------------------------------------------------------";
-
+	
+	// End of Questions: Now the questions are places into their array along with the answers in a separate array.
+	    
         String[] Questions = {Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10};
 
         char[] Answers = {'c', 'a', 'b', 'd', 'c', 'b', 'a', 'c', 'b', 'd'};
 
+	/* Here is the magic of the code that prints out all questions and compairs the user's answer to the correct answer.
+	    It goes through a simple for loop and if the user answer mathces the Answers array, it will add one point to the Correct variable.
+	*/    
+	    
         for(int i = 0; i < Questions.length; i++){
             System.out.println(Questions[i]);
             Scanner scan = new Scanner(System.in);
@@ -200,7 +207,5 @@ public class TechQuiz {
             Thread.currentThread().interrupt();
                
         }
-
-
     }
 }
