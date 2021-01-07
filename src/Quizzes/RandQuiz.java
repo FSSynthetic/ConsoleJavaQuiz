@@ -12,7 +12,7 @@ public class RandQuiz {
         System.out.println("You are about to start the Random Question Based Quiz.");
         System.out.println();
         System.out.println("It may also be worth noting that while you're taking the quiz,");
-        System.out.println("if you type a response other than the correct answer, you'll be marked incorrect.");
+        System.out.println("if you type any response other than the correct answer, it'll be marked incorrect.");
         System.out.println();
         System.out.println("Are you sure you want to continue?");
         System.out.println();
