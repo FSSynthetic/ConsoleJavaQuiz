@@ -143,7 +143,7 @@ public class DiscQuiz {
 	    
         String[] Questions = {Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10};
 
-        char[] Answers = {'a', 'c', 'b', 'a', 'd', 'c', 'd', 'a', 'a', 'b'};
+        char[] Answers = {'c', 'd', 'a', 'b', 'd', 'a', 'b', 'd', 'd', 'd'};
 	
 	    /* Here is the magic of the code that prints out all questions and compairs the user's answer to the correct answer.
 	    	It goes through a simple for loop and if the user answer mathces the Answers array, it will add one point to the Correct variable.
