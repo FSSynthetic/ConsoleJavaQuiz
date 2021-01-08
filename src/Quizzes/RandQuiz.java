@@ -41,7 +41,7 @@ public class RandQuiz {
 			    
 			    
 			}
-			TechQuiz.RandMain(args);
+			RandQuiz.RandMain(args);
 			    
         }
         in.close();
@@ -167,7 +167,7 @@ public class RandQuiz {
 
         // End of Quiz Questions.
 
-        System.out.println("You have finished the TechQuiz!");
+        System.out.println("You have finished the Random Question Quiz!");
 
         try {
             Thread.sleep(3 * 1000);
