@@ -3,23 +3,15 @@ package src.Quizzes;
 import java.util.Scanner;
 
 public class DiscQuiz {
-
-    private static void ClearConsole() { // Clear Console method.
-
-		System.out.print("\033[H\033[2J");  
-        System.out.flush();
-
-	}
     
-    public static void DiscMain(String[] args) { // Just a simple briefing message.
+    public static void JavaMain(String[] args) { // Just a simple briefing message.
 
-        ClearConsole();
-
+        System.out.println();
         System.out.println("------------------------------------------------------");
         System.out.println("You are about to start the Discord Based Quiz.");
         System.out.println();
         System.out.println("It may also be worth noting that while you're taking the quiz,");
-        System.out.println("if you type a response other than the correct answer, you'll be marked incorrect.");
+        System.out.println("if you type any response other than the correct answer, it'll be marked incorrect.");
         System.out.println();
         System.out.println("Are you sure you want to continue?");
         System.out.println();
@@ -38,8 +30,7 @@ public class DiscQuiz {
 			src.StartMenu.main(null);
 		}
 		else {
-		ClearConsole();
-			System.out.println("ERROR:  Invalid Response. Please try again.");
+			System.out.println(\n"ERROR:  Invalid Response. Please try again.");
 			
 			
 			try {
@@ -56,77 +47,9 @@ public class DiscQuiz {
     }
 
     public static void StartQuiz(String[] args) {
-        ClearConsole();
+        int Correct = 0;
 
-        System.out.println("Alright, here we go!");
-
-        try {
-            Thread.sleep(3 * 1000);
-        } catch (InterruptedException ie) {
-            Thread.currentThread().interrupt();
-               
-        }
-
-        ClearConsole();
-
-        int Correct = 0; // This is the "Correct" variable. This will count how many questions the user answered correct.
-
-        System.out.println("------------------------------------------------------");
-        System.out.println("Question 1:");
-        System.out.println();
-        System.out.println("When was Discord first ever released?");
-        System.out.println();
-        System.out.println("January 25th, 2015: A");
-        System.out.println("March 6th, 2009: B");
-        System.out.println("May 13th, 2015: C");
-        System.out.println("December 2nd, 2012: D");
-        System.out.println("------------------------------------------------------");
-
-        Scanner Q1 = new Scanner(System.in);
-        char Question1 = Q1.nextLine().charAt(0);
-
-        if (Character.toLowerCase(Question1) == 'c') { // If the user response is equal to the expression inside the parentheses, it will add 1 to the "Correct" variable.
-            Correct++;
-        }
-        else { // If the user response is not equal to the expression inside the parentheses, it will just continue the program without adding to the "Correct" variable.
-        }
-
-        ClearConsole();
-
-        System.out.println("Next Question!");
-
-        try { // Pause statement
-            Thread.sleep(3 * 1000);
-        } catch (InterruptedException ie) {
-            Thread.currentThread().interrupt();
-               
-        }
-
-        ClearConsole();
-
-        System.out.println("------------------------------------------------------");
-        System.out.println("Question 2:");
-        System.out.println();
-        System.out.println("Who is the founder of Discord?");
-        System.out.println();
-        System.out.println("Daniel Ek: A");
-        System.out.println("Larry Page: B");
-        System.out.println("Bobby Murphy: C");
-        System.out.println("Jason Citron: D");
-        System.out.println("------------------------------------------------------");
-
-        Scanner Q2 = new Scanner(System.in);
-        char Question2 = Q2.nextLine().charAt(0);
-
-        if (Character.toLowerCase(Question2) == 'd') {
-            Correct++;
-        }
-        else {
-        }
-
-        ClearConsole();
-
-        System.out.println("Next Question!");
+        System.out.println(\n"Alright, here we go!");
 
         try {
             Thread.sleep(3 * 1000);
@@ -134,265 +57,116 @@ public class DiscQuiz {
             Thread.currentThread().interrupt();
                
         }
+	    // Here begins the strings of questions. Each question in assigned to a variable. The questions variables are later placed into an array.
 
-        ClearConsole();
+        String Q1 = \n"------------------------------------------------------\n"
+            +   "Question 1:\n"
+            +   " \n"
+            +   "When was Discord first ever released?\n"
+            +   " \n"
+            +   "January 25th, 2015: A\March 6th, 2009: B\nMay 13th, 2015: C\nDecember 2nd, 2012: D\n"
+            +   "------------------------------------------------------";
 
-        System.out.println("------------------------------------------------------");
-        System.out.println("Question 3:");
-        System.out.println();
-        System.out.println("What is the name of Discord's mascot?");
-        System.out.println();
-        System.out.println("Wumpus: A");
-        System.out.println("Dragon: B");
-        System.out.println("Clyde: C");
-        System.out.println("Ghostface Chillah: D");
-        System.out.println("------------------------------------------------------");
+        String Q2 = \n"------------------------------------------------------\n"
+            +   "Question 2:\n"
+            +   " \n"
+            +   "Who is the founder of Discord?\n"
+            +   " \n"
+            +   "Daniel Ek: A\nLarry Page: B\nBobby Murphy: C\nJason Citron: D\n"
+            +   "------------------------------------------------------";
 
-        Scanner Q3 = new Scanner(System.in);
-        char Question3 = Q3.nextLine().charAt(0);
+        String Q3 = \n"------------------------------------------------------\n"
+            +   "Question 3:\n"
+            +   " \n"
+            +   "What is the name of Discord's mascot?\n"
+            +   " \n"
+            +   "Wumpus: A\nDragon: B\nClyde: C\nGhostface Chillah: D\n"
+            +   "------------------------------------------------------";
 
-        if (Character.toLowerCase(Question3) == 'a') {
-            Correct++;
-        }
-        else {
-        }
+        String Q4 = \n"------------------------------------------------------\n"
+            +   "Question 4:\n"
+            +   " \n"
+            +   "What name did Discord officially give to their logo?\n"
+            +   " \n"
+            +   "Wumpus: A\nHypno: B\nLarry: C\nClyde: D\n"
+            +   "------------------------------------------------------";
 
-        ClearConsole();
+        String Q5 = \n"------------------------------------------------------\n"
+            +   "Question 5:\n"
+            +   " \n"
+            +   "What id Discord's subscription service called?\n"
+            +   " \n"
+            +   "Hypesquad: A\nNitro: B\nTOS: C\nPartner: D\n"
+            +   "------------------------------------------------------";
 
-        System.out.println("Next Question!");
+        String Q6 = \n"------------------------------------------------------\n"
+            +   "Question 6:\n"
+            +   " \n"
+            +   "What badge is unlocked when helping Discord find and fix bugs?\n"
+            +   " \n"
+            +   "Bug Hunter Badge: A\nHelper Badge: B\nFixer Badge: C\nPartner Badge: D\n"
+            +   "------------------------------------------------------";
 
-        try {
-            Thread.sleep(3 * 1000);
-        } catch (InterruptedException ie) {
-            Thread.currentThread().interrupt();
-               
-        }
+        String Q7 = \n"------------------------------------------------------\n"
+            +   "Question 7:\n"
+            +   " \n"
+            +   "When was Discord Dark Mode first released?"
+            +   " \n"
+            +   "January 19th, 2016: A\nAugust 6th, 2015: B\nSeptember 3rd, 2015: C\nJune 5th, 2016: D\n"
+            +   "------------------------------------------------------";
 
-        ClearConsole();
+        String Q8 = \n"------------------------------------------------------\n"
+            +   "Question 8:\n"
+            +   " \n"
+            +   "What is the name of the robot hamster that pops up on Discord's 404 page?\n"
+            +   " \n"
+            +   "ChatterBox: A\Marky: B\nWumperston: C\Nelly: D\n"
+            +   "------------------------------------------------------";
 
-        System.out.println("------------------------------------------------------");
-        System.out.println("Question 4:");
-        System.out.println();
-        System.out.println("What name did Discord officially give to their logo?");
-        System.out.println();
-        System.out.println("Wumpus: A");
-        System.out.println("Hypno: B");
-        System.out.println("Larry: C");
-        System.out.println("Clyde: D");
-        System.out.println("------------------------------------------------------");
+        String Q9 = \n"------------------------------------------------------\n"
+            +   "Question 9:\n"
+            +   " \n"
+            +   "What was Discord Inc. originally called?\n"
+            +   " \n"
+            +   "Game Talk: A\nDisc Space: B\nOpenFeint: C\nHammer and Chisel Inc.: D\n"
+            +   "------------------------------------------------------";
 
-        Scanner Q4 = new Scanner(System.in);
-        char Question4 = Q4.nextLine().charAt(0);
+        String Q10 = \n"------------------------------------------------------\n"
+            +   "Question 10:\n"
+            +   " \n"
+            +   "What discord badge represents the old Hammer and Chisel Inc. logo?\n"
+            +   " \n"
+            +   "HypeSquad Badge: A\nBug Hunter Badge: B\nOwner Badge: C\nDiscord Staff Badge: D\n"
+            +   "------------------------------------------------------";
+	    
+	// End of Questions: Now the questions are places into their array along with the answers in a separate array.
+	    
+        String[] Questions = {Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10};
 
-        if (Character.toLowerCase(Question4) == 'd') {
-            Correct++;
-        }
-        else {
-        }
-
-        ClearConsole();
-
-        System.out.println("Next Question!");
-
-        try {
-            Thread.sleep(3 * 1000);
-        } catch (InterruptedException ie) {
-            Thread.currentThread().interrupt();
-               
-        }
-
-        ClearConsole();
-
-        System.out.println("------------------------------------------------------");
-        System.out.println("Question 5:");
-        System.out.println();
-        System.out.println("What id Discord's subscription service called?");
-        System.out.println();
-        System.out.println("Hypesquad: A");
-        System.out.println("Nitro: B");
-        System.out.println("TOS: C");
-        System.out.println("Partner: D");
-        System.out.println("------------------------------------------------------");
-
-        Scanner Q5 = new Scanner(System.in);
-        char Question5 = Q5.nextLine().charAt(0);
-
-        if (Character.toLowerCase(Question5) == 'b') {
-            Correct++;
-        }
-        else {
-        }
-
-        ClearConsole();
-
-        System.out.println("Next Question!");
-
-        try {
-            Thread.sleep(3 * 1000);
-        } catch (InterruptedException ie) {
-            Thread.currentThread().interrupt();
-               
-        }
-
-        ClearConsole();
-
-        System.out.println("------------------------------------------------------");
-        System.out.println("Question 6:");
-        System.out.println();
-        System.out.println("What badge is unlocked when helping Discord find and fix bugs?");
-        System.out.println();
-        System.out.println("Bug Hunter Badge: A");
-        System.out.println("Helper Badge: B");
-        System.out.println("Fixer Badge: C");
-        System.out.println("Partner Badge: D");
-        System.out.println("------------------------------------------------------");
-
-        Scanner Q6 = new Scanner(System.in);
-        char Question6 = Q6.nextLine().charAt(0);
-
-        if (Character.toLowerCase(Question6) == 'a') {
-            Correct++;
-        }
-        else {
+        char[] Answers = {'a', 'c', 'b', 'a', 'd', 'c', 'd', 'a', 'a', 'b'};
+	
+	    /* Here is the magic of the code that prints out all questions and compairs the user's answer to the correct answer.
+	    	It goes through a simple for loop and if the user answer mathces the Answers array, it will add one point to the Correct variable.
+	    */
+	    
+        for(int i = 0; i < Questions.length; i++){
+            System.out.println(Questions[i]);
+            Scanner scan = new Scanner(System.in);
+            char answer = scan.nextLine().charAt(0);
+            if (answer == (Character.toLowerCase(Answers[i]))) {
+            	System.out.println("You answered correctly!");  
+            	Correct++;
+            }
+            else{
+		System.out.println("Incorrect");
+		System.out.println("The correct answer was" Character.toLowerCase(Answers[i])));
+            }
         }
 
-        ClearConsole();
-
-        System.out.println("Next Question!");
-
-        try {
-            Thread.sleep(3 * 1000);
-        } catch (InterruptedException ie) {
-            Thread.currentThread().interrupt();
-               
-        }
-
-        ClearConsole();
-
-        System.out.println("------------------------------------------------------");
-        System.out.println("Question 7:");
-        System.out.println();
-        System.out.println("When did Discord Dark Mode get released?");
-        System.out.println();
-        System.out.println("January 19th, 2016: A");
-        System.out.println("August 6th, 2015: B");
-        System.out.println("September 3rd, 2015: C");
-        System.out.println("June 5th, 2016: D");
-        System.out.println("------------------------------------------------------");
-
-        Scanner Q7 = new Scanner(System.in);
-        char Question7 = Q7.nextLine().charAt(0);
-
-        if (Character.toLowerCase(Question7) == 'b') {
-            Correct++;
-        }
-        else {
-        }
-
-        ClearConsole();
-
-        System.out.println("Next Question!");
-
-        try {
-            Thread.sleep(3 * 1000);
-        } catch (InterruptedException ie) {
-            Thread.currentThread().interrupt();
-               
-        }
-
-        ClearConsole();
-
-        System.out.println("------------------------------------------------------");
-        System.out.println("Question 8:");
-        System.out.println();
-        System.out.println("What was Discord almost named?");
-        System.out.println();
-        System.out.println("ChatterBox: A");
-        System.out.println("FireStone: B");
-        System.out.println("Wyvern: C");
-        System.out.println("Chizl: D");
-        System.out.println("------------------------------------------------------");
-
-        Scanner Q8 = new Scanner(System.in);
-        char Question8 = Q8.nextLine().charAt(0);
-
-        if (Character.toLowerCase(Question8) == 'c') {
-            Correct++;
-        }
-        else {
-        }
-
-        ClearConsole();
-
-        System.out.println("Next Question!");
-
-        try {
-            Thread.sleep(3 * 1000);
-        } catch (InterruptedException ie) {
-            Thread.currentThread().interrupt();
-               
-        }
-
-        ClearConsole();
-
-        System.out.println("------------------------------------------------------");
-        System.out.println("Question 9:");
-        System.out.println();
-        System.out.println("What was Discord Inc. originally called?");
-        System.out.println();
-        System.out.println("Game Talk: A");
-        System.out.println("Disc Space: B");
-        System.out.println("OpenFeint: C");
-        System.out.println("Hammer and Chisel Inc: D");
-        System.out.println("------------------------------------------------------");
-
-        Scanner Q9 = new Scanner(System.in);
-        char Question9 = Q9.nextLine().charAt(0);
-
-        if (Character.toLowerCase(Question9) == 'd') {
-            Correct++;
-        }
-        else {
-        }
-
-        ClearConsole();
-
-        System.out.println("Next Question!");
-
-        try {
-            Thread.sleep(3 * 1000);
-        } catch (InterruptedException ie) {
-            Thread.currentThread().interrupt();
-               
-        }
-
-        ClearConsole();
-
-        System.out.println("------------------------------------------------------");
-        System.out.println("Question 10:");
-        System.out.println();
-        System.out.println("What discord badge represents the old Hammer and Chisel Inc logo?");
-        System.out.println();
-        System.out.println("HypeSquad Badge: A");
-        System.out.println("Bug Hunter Badge: B");
-        System.out.println("Owner Badge: C");
-        System.out.println("Discord Staff Badge: D");
-        System.out.println("------------------------------------------------------");
-
-        Scanner Q10 = new Scanner(System.in);
-        char Question10 = Q10.nextLine().charAt(0);
-
-        if (Character.toLowerCase(Question10) == 'd') {
-            Correct++;
-        }
-        else {
-        }
 
         // End of Quiz Questions.
 
-        ClearConsole();
-
-        System.out.println("You have finished the Discord based quiz!");
+        System.out.println("You have finished the Discord Quiz!");
 
         try {
             Thread.sleep(3 * 1000);
@@ -400,17 +174,12 @@ public class DiscQuiz {
             Thread.currentThread().interrupt();
                
         }
-
-        ClearConsole();
-
         
         if (Correct >= 6) { // If the user has 6 or more answers correct, this statement will execute.
-            ClearConsole();
             System.out.println("You got " + Correct + "/10 correct with a minimum of 6/10 to pass. You passed!");
 
         }
         else { // If the user has less than 6 correct answers, this statement will execute.
-            ClearConsole();
             System.out.println("You got " + Correct + "/10 correct with a minimum of 6/10 to pass. Unfortunately, You failed.");
         }
 
@@ -421,8 +190,6 @@ public class DiscQuiz {
                
         }
 
-        ClearConsole();
-
         System.out.println("Welp, back to the main menu you go!");
 
         try {
@@ -431,7 +198,5 @@ public class DiscQuiz {
             Thread.currentThread().interrupt();
                
         }
-        src.StartMenu.StartQuiz();
-
     }
 }
