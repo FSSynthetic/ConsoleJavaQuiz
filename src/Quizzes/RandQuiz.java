@@ -87,7 +87,7 @@ public class RandQuiz {
         String Q4 = \n"------------------------------------------------------\n"
             +   "Question 4:\n"
             +   " \n"
-            +   "`When was Wikipedia founded??\n"
+            +   "`When was Wikipedia founded?\n"
             +   " \n"
             +   "1994: A\n2001: B\n2004: C\n2006: D\n"
             +   "------------------------------------------------------";
