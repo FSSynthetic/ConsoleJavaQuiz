@@ -104,7 +104,7 @@ public class JavaQuiz {
             +   " \n"
             +   "Java was originally developed by whom working for Sun Microsystems in 1996?\n"
             +   " \n"
-            +   "Bjarne Stroustrup: A\nJason Citron: B\nJames Gosling: C\nPerl/Larry Wall: D\n"
+            +   "Bjarne Stroustrup: A\nJason Citron: B\nJames Gosling: C\nLarry Wall: D\n"
             +   "------------------------------------------------------";
 
         String Q7 = \n"------------------------------------------------------\n"
@@ -112,7 +112,7 @@ public class JavaQuiz {
             +   " \n"
             +   "Which method can be used to find the highest value of x and y?"
             +   " \n"
-            +   "Math.largest(x,y): A\nMath.maxNum(x,y): B\n93Math.maximum(x,y): C\nMath.max(x,y): D\n"
+            +   "Math.largest(x,y): A\nMath.maxNum(x,y): B\nMath.maximum(x,y): C\nMath.max(x,y): D\n"
             +   "------------------------------------------------------";
 
         String Q8 = \n"------------------------------------------------------\n"
