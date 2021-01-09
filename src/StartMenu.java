@@ -8,7 +8,7 @@ public class  StartMenu {
 	
 		//Just a simple welcome menu with two options to choose from.
 		
-		System.out.println("------------------------------------------------------");
+		System.out.println("\n------------------------------------------------------");
 		System.out.println("Welcome to my quiz!");
 		System.out.println();
 		System.out.println("Please select an option:");
@@ -50,8 +50,8 @@ public class  StartMenu {
 
 		//This is the menu where the user picks what type of quiz they take.
 
-		System.out.println("------------------------------------------------------");
-		System.out.println("\nAlright, choose what type of quiz you would like to take or quit the program:");
+		System.out.println("\n------------------------------------------------------");
+		System.out.println("Alright, choose what type of quiz you would like to take or quit the program:");
 		System.out.println();
 		System.out.println("Java Based Quiz: 1");
 		System.out.println("Technology Based Quiz: 2");
@@ -92,9 +92,6 @@ public class  StartMenu {
 		StartQuiz();
         
     }
-
-		
-	
 
     public static void QuitQuiz() { // Just a simple exit message
 
