@@ -59,7 +59,7 @@ public class TechQuiz {
         }
 	    // Here begins the strings of questions. Each question in assigned to a variable. The questions variables are later placed into an array.
 
-        String Q1 = \n"------------------------------------------------------\n"
+        String Q1 = "\n------------------------------------------------------\n"
             +   "Question 1:\n"
             +   " \n"
             +   "What does the abbreviation CPU stand for?\n"
@@ -67,7 +67,7 @@ public class TechQuiz {
             +   "Compacting Processing Unit: A\nCompiling Processing Unit: B\nCentral Processing Unit: C\nCommunication Processing Unit D\n"
             +   "------------------------------------------------------";
 
-        String Q2 = \n"------------------------------------------------------\n"
+        String Q2 = "\n------------------------------------------------------\n"
             +   "Question 2:\n"
             +   " \n"
             +   "When was the Microsoft operating system, \"Windows\" created?\n"
@@ -75,7 +75,7 @@ public class TechQuiz {
             +   "1985: A\n1992: B\n2001: C\n1988: D\n"
             +   "------------------------------------------------------";
 
-        String Q3 = \n"------------------------------------------------------\n"
+        String Q3 = "\n------------------------------------------------------\n"
             +   "Question 3:\n"
             +   " \n"
             +   "What is software?\n"
@@ -83,7 +83,7 @@ public class TechQuiz {
             +   "The physical components of a computer: A\nA collection of data or instructions that tell the computer how to work: B\nAnother term for the CPU: C\nBoth 1 and 2: D\n"
             +   "------------------------------------------------------";
 
-        String Q4 = \n"------------------------------------------------------\n"
+        String Q4 = "\n------------------------------------------------------\n"
             +   "Question 4:\n"
             +   " \n"
             +   "What is Hardware?\n"
@@ -91,7 +91,7 @@ public class TechQuiz {
             +   "Any visible program like the Google Search Engine, Microsoft Excel, Notepad, etc, that the user can interact with: A\nEverything computer piece except for the Motherboard: B\nJust the tower of a PC: C\nThe physical components of a computer that executes functions that make the computer work: D\n"
             +   "------------------------------------------------------";
 
-        String Q5 = \n"------------------------------------------------------\n"
+        String Q5 = "\n------------------------------------------------------\n"
             +   "Question 5:\n"
             +   " \n"
             +   "When was Linux founded and released?\n"
@@ -99,7 +99,7 @@ public class TechQuiz {
             +   "2003: A\n1989: B\n1991: C\n2000: D\n"
             +   "------------------------------------------------------";
 
-        String Q6 = \n"------------------------------------------------------\n"
+        String Q6 = "\n------------------------------------------------------\n"
             +   "Question 6:\n"
             +   " \n"
             +   "Who created the Linux Operating System?\n"
@@ -107,7 +107,7 @@ public class TechQuiz {
             +   "Steve Jobs: A\nLinus Torvalds: B\nMark Zuckerberg: C\nLinux Torvalds: D\n"
             +   "------------------------------------------------------";
 
-        String Q7 = \n"------------------------------------------------------\n"
+        String Q7 = "\n------------------------------------------------------\n"
             +   "Question 7:\n"
             +   " \n"
             +   "When was \"The Logic Theorist\", (arguably the first Artificial Intelligence program) create and published?\n"
@@ -115,7 +115,7 @@ public class TechQuiz {
             +   "1955-1956: A\n1950-1967: B\n2000-2001: C\n1957-1964: D\n"
             +   "------------------------------------------------------";
 
-        String Q8 = \n"------------------------------------------------------\n"
+        String Q8 = "\n------------------------------------------------------\n"
             +   "Question 8:\n"
             +   " \n"
             +   "When did the first Iphone get released?\n"
@@ -123,7 +123,7 @@ public class TechQuiz {
             +   "1998: A\n2004: B\n2007: C\n2006: D\n"
             +   "------------------------------------------------------";
 
-        String Q9 = \n"------------------------------------------------------\n"
+        String Q9 = "\n------------------------------------------------------\n"
             +   "Question 9:\n"
             +   " \n"
             +   "Who are the founders of Apple\n"
@@ -131,7 +131,7 @@ public class TechQuiz {
             +   "Steve Jobs: A\nSteve Jobs, Steve Wozniak, and Ronald Wayne: B\nSteve Wozniak and Mark Zuckerberg: C\nKevin Systrom, Mike Krieger, and Steve Jobs: D\n"
             +   "------------------------------------------------------";
 
-        String Q10 = \n"------------------------------------------------------\n"
+        String Q10 = "\n------------------------------------------------------\n"
             +   "Question 10:\n"
             +   " \n"
             +   "When was the first phone invented and released\n"
@@ -159,9 +159,11 @@ public class TechQuiz {
             }
             else{
 		System.out.println("Incorrect");
-		System.out.println("The correct answer was" Character.toLowerCase(Answers[i])));
+		System.out.println("The correct answer was" + Character.toLowerCase(Answers[i]));
             }
         }
+
+        // End of quiz questions
 	    
         System.out.println("You have finished the TechQuiz!");
 
