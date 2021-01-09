@@ -4,16 +4,7 @@ import java.util.Scanner;
 
 public class  StartMenu {
 
-    private static void ClearConsole() { // This is just a method used for clearing the console. You call the method to clear any text on the console above it. Only works for VSCode as far as I know and I have no idea why. If it becomes and issue, just comment the method out. Just a warning, if you comment this out, your code won't attempt to clear the console at all.
-
-	    System.out.print("\033[H\033[2J");  
-        System.out.flush();
-
-	}
-
     public static void main(String[] args) {
-
-	    ClearConsole(); // Hey look! It's that ClearConsole method I talked about.
 	
 		//Just a simple welcome menu with two options to choose from.
 		
@@ -39,8 +30,7 @@ public class  StartMenu {
         }
         
 		else { // If a number doesn't match up to 1 or 2, this statement will engage and redirect the user back to the beginning of the main method.
-		    ClearConsole();
-		    System.out.println("ERROR:  Invalid Response. Please try again.");
+		    System.out.println("\nERROR:  Invalid Response. Please try again.");
 			
 		    // Pause the program for a selected amount of time.
 			
@@ -58,12 +48,10 @@ public class  StartMenu {
 			    
 	public static void StartQuiz() {
 
-		ClearConsole();
-
 		//This is the menu where the user picks what type of quiz they take.
 
 		System.out.println("------------------------------------------------------");
-		System.out.println("Alright, choose what type of quiz you would like to take or quit the program:");
+		System.out.println("\nAlright, choose what type of quiz you would like to take or quit the program:");
 		System.out.println();
 		System.out.println("Java Based Quiz: 1");
 		System.out.println("Technology Based Quiz: 2");
@@ -93,8 +81,7 @@ public class  StartMenu {
 			QuitQuiz();
 		}
 		else { 
-		    ClearConsole();
-			System.out.println("ERROR:  Invalid Response. Please try again.");
+			System.out.println("\nERROR:  Invalid Response. Please try again.");
 		}
 
 		try {
@@ -110,10 +97,8 @@ public class  StartMenu {
 	
 
     public static void QuitQuiz() { // Just a simple exit message
-            
-		ClearConsole();
 
-		System.out.println("EXITING: You have a nice day!");
+		System.out.println("\nEXITING: You have a nice day!");
 
 		    try {
 			    Thread.sleep(6 * 1000);
@@ -121,8 +106,5 @@ public class  StartMenu {
 			    Thread.currentThread().interrupt();
 			
 		    }
-
-        ClearConsole();
-        
     }
 }
