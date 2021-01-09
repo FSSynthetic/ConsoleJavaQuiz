@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class RandQuiz {
     
     public static void RandMain(String[] args) { // Just a simple briefing message.
-        ClearConsole();
 
         System.out.println();
         System.out.println("------------------------------------------------------");
@@ -31,7 +30,7 @@ public class RandQuiz {
 			src.StartMenu.main(null);
 		}
 		else {
-			System.out.println(\n"ERROR:  Invalid Response. Please try again.");
+			System.out.println("\nERROR:  Invalid Response. Please try again.");
 			
 			
 			try {
@@ -50,7 +49,7 @@ public class RandQuiz {
     public static void StartQuiz(String[] args) {
         int Correct = 0;
 
-        System.out.println(\n"Alright, here we go!");
+        System.out.println("\nAlright, here we go!");
 
         try {
             Thread.sleep(3 * 1000);
@@ -60,7 +59,7 @@ public class RandQuiz {
         }
 	    // Here begins the strings of questions. Each question in assigned to a variable. The questions variables are later placed into an array.
 
-        String Q1 = \n"------------------------------------------------------\n"
+        String Q1 = "\n------------------------------------------------------\n"
             +   "Question 1:\n"
             +   " \n"
             +   "What is 24 * 4 + 6 -17?\n"
@@ -68,7 +67,7 @@ public class RandQuiz {
             +   "73: A\n56: B\n94: C\n85: D\n"
             +   "------------------------------------------------------";
 
-        String Q2 = \n"------------------------------------------------------\n"
+        String Q2 = "\n------------------------------------------------------\n"
             +   "Question 2:\n"
             +   " \n"
             +   "What was the first planet ever discovered with a telescope?\n"
@@ -76,7 +75,7 @@ public class RandQuiz {
             +   "Mars: A\nVenus: B\nUranus: C\nEarth: D\n"
             +   "------------------------------------------------------";
 
-        String Q3 = \n"------------------------------------------------------\n"
+        String Q3 = "\n------------------------------------------------------\n"
             +   "Question 3:\n"
             +   " \n"
             +   "Who was the First president of the United States of America?\n"
@@ -84,7 +83,7 @@ public class RandQuiz {
             +   "George Washington: A\nRonald Reagan: B\nJohn Quincy Adams: C\nUlysses S. Grant: D\n"
             +   "------------------------------------------------------";
 
-        String Q4 = \n"------------------------------------------------------\n"
+        String Q4 = "\n------------------------------------------------------\n"
             +   "Question 4:\n"
             +   " \n"
             +   "`When was Wikipedia founded?\n"
@@ -92,7 +91,7 @@ public class RandQuiz {
             +   "1994: A\n2001: B\n2004: C\n2006: D\n"
             +   "------------------------------------------------------";
 
-        String Q5 = \n"------------------------------------------------------\n"
+        String Q5 = "\n------------------------------------------------------\n"
             +   "Question 5:\n"
             +   " \n"
             +   "What time format has 24 hours instead of the standard 12?\n"
@@ -100,7 +99,7 @@ public class RandQuiz {
             +   "24 Hour Time: A\nExpanded Time: B\nMilitary Time: C\nInternational Time: D\n"
             +   "------------------------------------------------------";
 
-        String Q6 = \n"------------------------------------------------------\n"
+        String Q6 = "\n------------------------------------------------------\n"
             +   "Question 6:\n"
             +   " \n"
             +   "Who was the first king of England?\n"
@@ -108,7 +107,7 @@ public class RandQuiz {
             +   "Queen Elizabeth l: A\nAthelstan: B\nJulius Caesar: C\nLinus Torvalds: D\n"
             +   "------------------------------------------------------";
 
-        String Q7 = \n"------------------------------------------------------\n"
+        String Q7 = "\n------------------------------------------------------\n"
             +   "Question 7:\n"
             +   " \n"
             +   "What is 15 * 3(4 + 3) - 67?\n"
@@ -116,7 +115,7 @@ public class RandQuiz {
             +   "256: A\n145: B\n93: C\n248: D\n"
             +   "------------------------------------------------------";
 
-        String Q8 = \n"------------------------------------------------------\n"
+        String Q8 = "\n------------------------------------------------------\n"
             +   "Question 8:\n"
             +   " \n"
             +   "When was the first university founded?\n"
@@ -124,7 +123,7 @@ public class RandQuiz {
             +   "2001: A\n1088: B\n1934: C\n1285: D\n"
             +   "------------------------------------------------------";
 
-        String Q9 = \n"------------------------------------------------------\n"
+        String Q9 = "\n------------------------------------------------------\n"
             +   "Question 9:\n"
             +   " \n"
             +   "Who were the first humans to set foot on the moon?\n"
@@ -132,7 +131,7 @@ public class RandQuiz {
             +   "Neil Armstrong, and Edwin \"Buzz\" Aldrin: A\nNeil Armstrong, Michael Collins and Edwin \"Buzz\" Aldrin: B\nessica Meir: C\nAlan Shepard: D\n"
             +   "------------------------------------------------------";
 
-        String Q10 = \n"------------------------------------------------------\n"
+        String Q10 = "\n------------------------------------------------------\n"
             +   "Question 10:\n"
             +   " \n"
             +   "What was the landmass of all 7 continents called when they were once linked together?\n"
@@ -160,10 +159,9 @@ public class RandQuiz {
             }
             else{
 		System.out.println("Incorrect");
-		System.out.println("The correct answer was" Character.toLowerCase(Answers[i])));
+		System.out.println("The correct answer was" + Character.toLowerCase(Answers[i]));
             }
         }
-
 
         // End of Quiz Questions.
 
