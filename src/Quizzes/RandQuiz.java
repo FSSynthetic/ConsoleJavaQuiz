@@ -2,13 +2,13 @@ package src.Quizzes;
 
 import java.util.Scanner;
 
-public class RandQuiz {
+public class TechQuiz {
     
-    public static void RandMain(String[] args) { // Just a simple briefing message.
+    public static void TechMain(String[] args) { // Just a simple briefing message.
 
         System.out.println();
         System.out.println("------------------------------------------------------");
-        System.out.println("You are about to start the Random Question Based Quiz.");
+        System.out.println("You are about to start the Technology Based Quiz.");
         System.out.println();
         System.out.println("It may also be worth noting that while you're taking the quiz,");
         System.out.println("if you type any response other than the correct answer, it'll be marked incorrect.");
@@ -30,7 +30,7 @@ public class RandQuiz {
 			src.StartMenu.main(null);
 		}
 		else {
-			System.out.println("\nERROR:  Invalid Response. Please try again.");
+			System.out.println("ERROR:  Invalid Response. Please try again.");
 			
 			
 			try {
@@ -40,7 +40,7 @@ public class RandQuiz {
 			    
 			    
 			}
-			RandQuiz.RandMain(args);
+			TechQuiz.TechMain(args);
 			    
         }
         in.close();
@@ -49,7 +49,7 @@ public class RandQuiz {
     public static void StartQuiz(String[] args) {
         int Correct = 0;
 
-        System.out.println("\nAlright, here we go!");
+        System.out.println("Alright, here we go!");
 
         try {
             Thread.sleep(3 * 1000);
@@ -62,98 +62,98 @@ public class RandQuiz {
         String Q1 = "\n------------------------------------------------------\n"
             +   "Question 1:\n"
             +   " \n"
-            +   "What is 24 * 4 + 6 -17?\n"
+            +   "What does the abbreviation CPU stand for?\n"
             +   " \n"
-            +   "73: A\n56: B\n94: C\n85: D\n"
+            +   "Compacting Processing Unit: A\nCompiling Processing Unit: B\nCentral Processing Unit: C\nCommunication Processing Unit D\n"
             +   "------------------------------------------------------";
 
         String Q2 = "\n------------------------------------------------------\n"
             +   "Question 2:\n"
             +   " \n"
-            +   "What was the first planet ever discovered with a telescope?\n"
+            +   "When was the Microsoft operating system, \"Windows\" created?\n"
             +   " \n"
-            +   "Mars: A\nVenus: B\nUranus: C\nEarth: D\n"
+            +   "1985: A\n1992: B\n2001: C\n1988: D\n"
             +   "------------------------------------------------------";
 
         String Q3 = "\n------------------------------------------------------\n"
             +   "Question 3:\n"
             +   " \n"
-            +   "Who was the First president of the United States of America?\n"
+            +   "What is software?\n"
             +   " \n"
-            +   "George Washington: A\nRonald Reagan: B\nJohn Quincy Adams: C\nUlysses S. Grant: D\n"
+            +   "The physical components of a computer: A\nA collection of data or instructions that tell the computer how to work: B\nAnother term for the CPU: C\nBoth 1 and 2: D\n"
             +   "------------------------------------------------------";
 
         String Q4 = "\n------------------------------------------------------\n"
             +   "Question 4:\n"
             +   " \n"
-            +   "`When was Wikipedia founded?\n"
+            +   "What is Hardware?\n"
             +   " \n"
-            +   "1994: A\n2001: B\n2004: C\n2006: D\n"
+            +   "Any visible program like the Google Search Engine, Microsoft Excel, Notepad, etc, that the user can interact with: A\nEverything computer piece except for the Motherboard: B\nJust the tower of a PC: C\nThe physical components of a computer that executes functions that make the computer work: D\n"
             +   "------------------------------------------------------";
 
         String Q5 = "\n------------------------------------------------------\n"
             +   "Question 5:\n"
             +   " \n"
-            +   "What time format has 24 hours instead of the standard 12?\n"
+            +   "When was Linux founded and released?\n"
             +   " \n"
-            +   "24 Hour Time: A\nExpanded Time: B\nMilitary Time: C\nInternational Time: D\n"
+            +   "2003: A\n1989: B\n1991: C\n2000: D\n"
             +   "------------------------------------------------------";
 
         String Q6 = "\n------------------------------------------------------\n"
             +   "Question 6:\n"
             +   " \n"
-            +   "Who was the first king of England?\n"
+            +   "Who created the Linux Operating System?\n"
             +   " \n"
-            +   "Queen Elizabeth l: A\nAthelstan: B\nJulius Caesar: C\nLinus Torvalds: D\n"
+            +   "Steve Jobs: A\nLinus Torvalds: B\nMark Zuckerberg: C\nLinux Torvalds: D\n"
             +   "------------------------------------------------------";
 
         String Q7 = "\n------------------------------------------------------\n"
             +   "Question 7:\n"
             +   " \n"
-            +   "What is 15 * 3(4 + 3) - 67?\n"
+            +   "When was \"The Logic Theorist\", (arguably the first Artificial Intelligence program) create and published?\n"
             +   " \n"
-            +   "256: A\n145: B\n93: C\n248: D\n"
+            +   "1955-1956: A\n1950-1967: B\n2000-2001: C\n1957-1964: D\n"
             +   "------------------------------------------------------";
 
         String Q8 = "\n------------------------------------------------------\n"
             +   "Question 8:\n"
             +   " \n"
-            +   "When was the first university founded?\n"
+            +   "When did the first Iphone get released?\n"
             +   " \n"
-            +   "2001: A\n1088: B\n1934: C\n1285: D\n"
+            +   "1998: A\n2004: B\n2007: C\n2006: D\n"
             +   "------------------------------------------------------";
 
         String Q9 = "\n------------------------------------------------------\n"
             +   "Question 9:\n"
             +   " \n"
-            +   "Who were the first humans to set foot on the moon?\n"
+            +   "Who are the founders of Apple\n"
             +   " \n"
-            +   "Neil Armstrong, and Edwin \"Buzz\" Aldrin: A\nNeil Armstrong, Michael Collins and Edwin \"Buzz\" Aldrin: B\nessica Meir: C\nAlan Shepard: D\n"
+            +   "Steve Jobs: A\nSteve Jobs, Steve Wozniak, and Ronald Wayne: B\nSteve Wozniak and Mark Zuckerberg: C\nKevin Systrom, Mike Krieger, and Steve Jobs: D\n"
             +   "------------------------------------------------------";
 
         String Q10 = "\n------------------------------------------------------\n"
             +   "Question 10:\n"
             +   " \n"
-            +   "What was the landmass of all 7 continents called when they were once linked together?\n"
+            +   "When was the first phone invented and released\n"
             +   " \n"
-            +   "Pangaea: A\nNorthern Hemisphere: B\nThe Collective Land: C\nEurasia: D\n"
+            +   "1980: A\n1868: B\n1902: C\n1876: D\n"
             +   "------------------------------------------------------";
-	    
+	
 	// End of Questions: Now the questions are places into their array along with the answers in a separate array.
 	    
         String[] Questions = {Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10};
 
-        char[] Answers = {'d', 'c', 'a', 'b', 'c', 'b', 'd', 'b', 'a', 'a'};
-	
-	    /* Here is the magic of the code that prints out all questions and compairs the user's answer to the correct answer.
-	    	It goes through a simple for loop and if the user answer mathces the Answers array, it will add one point to the Correct variable.
-	    */
+        char[] Answers = {'c', 'a', 'b', 'd', 'c', 'b', 'a', 'c', 'b', 'd'};
+
+	/* Here is the magic of the code that prints out all questions and compairs the user's answer to the correct answer.
+	    It goes through a simple for loop and if the user answer mathces the Answers array, it will add one point to the Correct variable.
+	*/    
 	    
         for(int i = 0; i < Questions.length; i++){
             System.out.println(Questions[i]);
             Scanner scan = new Scanner(System.in);
             char answer = scan.nextLine().charAt(0);
-            if (answer == (Character.toLowerCase(Answers[i]))) {
+            if(answer == (Character.toLowerCase(Answers[i]))) {
             	System.out.println("\nCorrect!");  
             	Correct++;
             }
@@ -165,7 +165,7 @@ public class RandQuiz {
 
         // End of Quiz Questions.
 
-        System.out.println("\nYou have finished the Random Based Quiz!");
+        System.out.println("\nYou have finished the Tech Quiz!");
 
         try {
             Thread.sleep(3 * 1000);
