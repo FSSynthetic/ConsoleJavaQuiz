@@ -30,7 +30,7 @@ public class JavaQuiz {
 			src.StartMenu.main(null);
 		}
 		else {
-			System.out.println(\n"ERROR:  Invalid Response. Please try again.");
+			System.out.println("\nERROR:  Invalid Response. Please try again.");
 			
 			
 			try {
@@ -49,7 +49,7 @@ public class JavaQuiz {
     public static void StartQuiz(String[] args) {
         int Correct = 0;
 
-        System.out.println(\n"Alright, here we go!");
+        System.out.println("\nAlright, here we go!");
 
         try {
             Thread.sleep(3 * 1000);
@@ -59,15 +59,15 @@ public class JavaQuiz {
         }
 	    // Here begins the strings of questions. Each question in assigned to a variable. The questions variables are later placed into an array.
 
-        String Q1 = \n"------------------------------------------------------\n"
+        String Q1 = "\n------------------------------------------------------\n"
             +   "Question 1:\n"
             +   " \n"
             +   "Is Java short for JavaScript?\n"
             +   " \n"
-            +   "Yes: A\No: B\n"
+            +   "Yes: A\nNo: B\n"
             +   "------------------------------------------------------";
 
-        String Q2 = \n"------------------------------------------------------\n"
+        String Q2 = "\n------------------------------------------------------\n"
             +   "Question 2:\n"
             +   " \n"
             +   "What type of programming language is Java?\n"
@@ -75,7 +75,7 @@ public class JavaQuiz {
             +   "Procedural Programming Language: A\nFunctional Programming Language: B\nObject-oriented Programming Language: C\nScripting Programming Language: D\n"
             +   "------------------------------------------------------";
 
-        String Q3 = \n"------------------------------------------------------\n"
+        String Q3 = "\n------------------------------------------------------\n"
             +   "Question 3:\n"
             +   " \n"
             +   "When was Java invented?\n"
@@ -83,7 +83,7 @@ public class JavaQuiz {
             +   "1998: A\n1996: B\n1989: C\n2001: D\n"
             +   "------------------------------------------------------";
 
-        String Q4 = \n"------------------------------------------------------\n"
+        String Q4 = "\n------------------------------------------------------\n"
             +   "Question 4:\n"
             +   " \n"
             +   "What is one of the two proper way to create a print statement?\n"
@@ -91,7 +91,7 @@ public class JavaQuiz {
             +   "System.out.println(\"Text\");: A\nSystem,out,println(\"Text\");: B\nPrint(\"Text\");: C\nWriteLine(\"Text\");: D\n"
             +   "------------------------------------------------------";
 
-        String Q5 = \n"------------------------------------------------------\n"
+        String Q5 = "\n------------------------------------------------------\n"
             +   "Question 5:\n"
             +   " \n"
             +   "Out of the four examples below, which one properly declares a variable?\n"
@@ -99,7 +99,7 @@ public class JavaQuiz {
             +   "(Variable (String test);: A\nDECLARE @TestVariable AS VARCHAR(100)='Test';: B\n CreateVar(Test);: C\nString Test;: D\n"
             +   "------------------------------------------------------";
 
-        String Q6 = \n"------------------------------------------------------\n"
+        String Q6 = "\n------------------------------------------------------\n"
             +   "Question 6:\n"
             +   " \n"
             +   "Java was originally developed by whom working for Sun Microsystems in 1996?\n"
@@ -107,7 +107,7 @@ public class JavaQuiz {
             +   "Bjarne Stroustrup: A\nJason Citron: B\nJames Gosling: C\nLarry Wall: D\n"
             +   "------------------------------------------------------";
 
-        String Q7 = \n"------------------------------------------------------\n"
+        String Q7 = "\n------------------------------------------------------\n"
             +   "Question 7:\n"
             +   " \n"
             +   "Which method can be used to find the highest value of x and y?"
@@ -115,7 +115,7 @@ public class JavaQuiz {
             +   "Math.largest(x,y): A\nMath.maxNum(x,y): B\nMath.maximum(x,y): C\nMath.max(x,y): D\n"
             +   "------------------------------------------------------";
 
-        String Q8 = \n"------------------------------------------------------\n"
+        String Q8 = "\n------------------------------------------------------\n"
             +   "Question 8:\n"
             +   " \n"
             +   "Is it possible to inherit attributes and methods from one class to another?\n"
@@ -123,7 +123,7 @@ public class JavaQuiz {
             +   "Yes: A\nNo: B\n"
             +   "------------------------------------------------------";
 
-        String Q9 = \n"------------------------------------------------------\n"
+        String Q9 = "\n------------------------------------------------------\n"
             +   "Question 9:\n"
             +   " \n"
             +   "Can the value of a string variable can be surrounded by single quotes?\n"
@@ -131,7 +131,7 @@ public class JavaQuiz {
             +   "Yes: A\nNo: B\n"
             +   "------------------------------------------------------";
 
-        String Q10 = \n"------------------------------------------------------\n"
+        String Q10 = "\n------------------------------------------------------\n"
             +   "Question 10:\n"
             +   " \n"
             +   "Which method can be used to find the length of a string?\n"
@@ -159,10 +159,9 @@ public class JavaQuiz {
             }
             else{
 		System.out.println("Incorrect");
-		System.out.println("The correct answer was" Character.toLowerCase(Answers[i])));
+		System.out.println("The correct answer was" + Character.toLowerCase(Answers[i]));
             }
         }
-
 
         // End of Quiz Questions.
 
