@@ -154,18 +154,18 @@ public class DiscQuiz {
             Scanner scan = new Scanner(System.in);
             char answer = scan.nextLine().charAt(0);
             if (answer == (Character.toLowerCase(Answers[i]))) {
-            	System.out.println("You answered correctly!");  
+            	System.out.println("\nCorrect!");  
             	Correct++;
             }
             else{
-		System.out.println("Incorrect");
-		System.out.println("The correct answer was" + Character.toLowerCase(Answers[i]));
+		System.out.println("\nIncorrect");
+		System.out.println("The correct answer was \"" + (Answers[i]) + "\"");
             }
         }
 
         // End of Quiz Questions.
 
-        System.out.println("You have finished the Discord Quiz!");
+        System.out.println("\nYou have finished the Discord Quiz!");
 
         try {
             Thread.sleep(3 * 1000);
@@ -175,11 +175,11 @@ public class DiscQuiz {
         }
         
         if (Correct >= 6) { // If the user has 6 or more answers correct, this statement will execute.
-            System.out.println("You got " + Correct + "/10 correct with a minimum of 6/10 to pass. You passed!");
+            System.out.println("\nYou got " + Correct + "/10 correct with a minimum of 6/10 to pass. You passed!");
 
         }
         else { // If the user has less than 6 correct answers, this statement will execute.
-            System.out.println("You got " + Correct + "/10 correct with a minimum of 6/10 to pass. Unfortunately, You failed.");
+            System.out.println("\nYou got " + Correct + "/10 correct with a minimum of 6/10 to pass. Unfortunately, You failed.");
         }
 
         try {
@@ -189,13 +189,14 @@ public class DiscQuiz {
                
         }
 
-        System.out.println("Welp, back to the main menu you go!");
+        System.out.println("\nThanks for playing, see you around!");
 
         try {
-            Thread.sleep(4 * 1000);
+            Thread.sleep(5 * 1000);
         } catch (InterruptedException ie) {
             Thread.currentThread().interrupt();
                
         }
+        src.StartMenu.main(null);
     }
 }
